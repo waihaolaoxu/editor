@@ -1,0 +1,47 @@
+@import 'http://at.alicdn.com/t/font_qre9gm1phdvd9529.css';
+//编辑器
+.emoji_content img,.emoji_preview img{display: inline !important;}
+.Editor{
+    .form-control{margin-top: 0;box-sizing:border-box;outline: 0;}
+    .editor_btns{
+        margin:10px 0;font-size: 14px;color:#666;line-height: 30px;position: relative;
+        .iconfont{margin-right: 3px;vertical-align: middle;font-size: 15px;}
+        span{margin:0 10px;cursor: pointer;
+            &.disabled{opacity: .5;}
+        }
+        .tip{position: absolute;right:10px;top:0;color:green;display: none;}
+    }
+    .editor_body{position: relative;
+        .text{padding:0 10px 10px;background: #f8f8f8;position: relative;margin-bottom: 20px;overflow: hidden;
+            .del{position: absolute;right:0;top:-5px;cursor: pointer;
+                .iconfont{font-size: 24px;color:#999;
+                    &:hover{color:#666;}
+                }
+            }
+            .drag{height: 30px;line-height: 30px;text-align: center;cursor: move;
+                em{display: none;color:#999;}
+                &:hover{
+                    .iconfont{display: none;}
+                    em{display: block;}
+                }
+                .iconfont{font-size: 23px;color:#999;}
+            }
+            textarea{width: 100%;height: 100px;resize:none;display: block;font-size: 14px;color:#000;}
+            .emoji{cursor: pointer;float:left;padding-top: 5px;color:#666;font-size: 12px;
+                &:before{color:#feb83e;font-size: 16px;position: relative;top:1px;margin-right: 2px;}
+            }
+        }
+        .pic_box{padding-left: 310px;
+            .pic{float: left;margin-left: -310px;width: 300px;height: 200px;background-position: center;background-repeat: no-repeat;border:solid 1px #ddd;background-color: #fff;background-size:contain;}
+            .video{float: left;margin-left: -310px;width: 300px;height: 200px;border:solid 1px #ddd;background-color: #fff;}
+            textarea{height: 200px;}
+        }
+        .link{text-align: center;
+            input{width: 30%;margin:0 1% 15px;}
+            .btn{display: block;margin: 0 auto;}
+            li{
+                span{cursor: pointer;}
+            }
+        }
+    }
+}

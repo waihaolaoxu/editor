@@ -1,0 +1,142 @@
+@import "http://at.alicdn.com/t/font_qre9gm1phdvd9529.css";
+.emoji_content img, .emoji_preview img {
+  display: inline !important;
+}
+
+.Editor .form-control {
+  margin-top: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+.Editor .editor_btns {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 30px;
+  position: relative;
+}
+.Editor .editor_btns .iconfont {
+  margin-right: 3px;
+  vertical-align: middle;
+  font-size: 15px;
+}
+.Editor .editor_btns span {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.Editor .editor_btns span.disabled {
+  opacity: .5;
+}
+.Editor .editor_btns .tip {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  color: green;
+  display: none;
+}
+.Editor .editor_body {
+  position: relative;
+}
+.Editor .editor_body .text {
+  padding: 0 10px 10px;
+  background: #f8f8f8;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.Editor .editor_body .text .del {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  cursor: pointer;
+}
+.Editor .editor_body .text .del .iconfont {
+  font-size: 24px;
+  color: #999;
+}
+.Editor .editor_body .text .del .iconfont:hover {
+  color: #666;
+}
+.Editor .editor_body .text .drag {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: move;
+}
+.Editor .editor_body .text .drag em {
+  display: none;
+  color: #999;
+}
+.Editor .editor_body .text .drag:hover .iconfont {
+  display: none;
+}
+.Editor .editor_body .text .drag:hover em {
+  display: block;
+}
+.Editor .editor_body .text .drag .iconfont {
+  font-size: 23px;
+  color: #999;
+}
+.Editor .editor_body .text textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  display: block;
+  font-size: 14px;
+  color: #000;
+}
+.Editor .editor_body .text .emoji {
+  cursor: pointer;
+  float: left;
+  padding-top: 5px;
+  color: #666;
+  font-size: 12px;
+}
+.Editor .editor_body .text .emoji:before {
+  color: #feb83e;
+  font-size: 16px;
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
+}
+.Editor .editor_body .pic_box {
+  padding-left: 310px;
+}
+.Editor .editor_body .pic_box .pic {
+  float: left;
+  margin-left: -310px;
+  width: 300px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  background-size: contain;
+}
+.Editor .editor_body .pic_box .video {
+  float: left;
+  margin-left: -310px;
+  width: 300px;
+  height: 200px;
+  border: solid 1px #ddd;
+  background-color: #fff;
+}
+.Editor .editor_body .pic_box textarea {
+  height: 200px;
+}
+.Editor .editor_body .link {
+  text-align: center;
+}
+.Editor .editor_body .link input {
+  width: 30%;
+  margin: 0 1% 15px;
+}
+.Editor .editor_body .link .btn {
+  display: block;
+  margin: 0 auto;
+}
+.Editor .editor_body .link li span {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=editor.css.map */

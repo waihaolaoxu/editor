@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本编辑器</title>
+	<link rel="stylesheet" type="text/css" href="css/editor.css">
+	<style>
+	.container{width: 960px;margin:100px auto;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="Editor">
+			<div class="tc mt20">初始化编辑器...</div>
+		</div>
+	</div>
+	<link rel="stylesheet" type="text/css" href="lib/emoji/dist/css/jquery.emoji.css">
+	<link rel="stylesheet" type="text/css" href="lib/scrollbar/jquery.mCustomScrollbar.css">
+	<script src="lib/jquery-1.9.1.min.js"></script>
+	<script src="lib/jquery-ui.min.js"></script>
+	<script src="lib/jquery.form.min.js"></script>
+	<script src="lib/emoji/dist/js/jquery.emoji.min.js"></script>
+	<script src="lib/scrollbar/jquery.mCustomScrollbar.min.js"></script>
+	<script src="lib/layer/layer.js"></script>
+
+	<script src="js/jquery.editor.js"></script>
+	<script type="text/javascript">
+		var editor = new Editor();
+        editor.init({
+            box:'#Editor',
+            debugger:true,
+            uploadUrl:''
+        });
+	</script>
+</body>
+</html>
