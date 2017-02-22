@@ -19,7 +19,8 @@ function Editor() {
 	this.config = {
 		fn: ['text', 'pic', 'video', 'link', 'emoji', 'clear'],
 		debugger: false,
-		uploadUrl: ""
+		uploadUrl: "",
+		data:""
 	}
 
 	//功能模版
@@ -140,14 +141,22 @@ Editor.prototype = {
 
 		// 初始化编辑器
 		_self.templateInit(opt.box);
-		if ('sessionStorage' in window) {
-			if (sessionStorage.jStorage) {
-				var data = JSON.parse(sessionStorage.jStorage);
-				if (data.length) {
-					$('.J_text').remove();
-					$.each(data, function(i, d) {
-						_self.template(d);
-					});
+		if(opt.data){
+			$('.J_text').remove();
+			$.each(data, function(i, d) {
+				_self.template(d);
+			});
+		}else{
+			_self.autoSave();
+			if ('sessionStorage' in window) {
+				if (sessionStorage.jStorage) {
+					var data = JSON.parse(sessionStorage.jStorage);
+					if (data.length) {
+						$('.J_text').remove();
+						$.each(data, function(i, d) {
+							_self.template(d);
+						});
+					}
 				}
 			}
 		}
@@ -159,7 +168,6 @@ Editor.prototype = {
 		_self.addEmoji(opt.box);
 		_self.addLink();
 		_self.clear();
-		_self.autoSave();
 
 		// 打印配置
 		_self.log(_self.config);
